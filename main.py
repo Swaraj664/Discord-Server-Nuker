@@ -22,17 +22,22 @@ if anyerror == True:
     exit()
 
 import json
+try:
+  json_data = open("settings.json")
+  json_data = json.load(json_data)
 
-json_data = open("settings.json")
-json_data = json.load(json_data)
 
-#Settings
-prefix = str(json_data["prefix"])
-amount_of_channels_to_create = int(json_data["amount_of_channels_to_create"])
-channel_names = str(json_data["channel_names"])
-token = str(json_data["bot_token"])
-msg = str(json_data["message_to_spam"])
-amount_of_messages_to_send_in_each_channel = int(json_data["amount_of_messages_to_send_in_each_channel"])
+  prefix = str(json_data["prefix"])
+  amount_of_channels_to_create = int(json_data["amount_of_channels_to_create"])
+  channel_names = str(json_data["channel_names"])
+  token = str(json_data["bot_token"])
+  msg = str(json_data["message_to_spam"])
+  amount_of_messages_to_send_in_each_channel = int(json_data["amount_of_messages_to_send_in_each_channel"])
+except:
+  print('Missing "settings.json" File, It Stores All Settings')
+  input("")
+  exit()
+
 
 #Bot Code
 print("Starting Bot...")
@@ -44,11 +49,8 @@ async def on_ready():
 @bot.command()
 async def nuke(ctx):
   try:
-    try:
-        await ctx.message.delete()
-        print(colorama.Fore.GREEN + "Deleted Nuke Message")
-    except:
-        print(colorama.Fore.RED + "Error While Deleting Nuke Message")
+    await ctx.message.delete()
+    print(colorama.Fore.GREEN + "Deleted Nuke Message")
     for channel in ctx.guild.channels:
         try:
             print(colorama.Fore.GREEN + "Deleted Channel")
