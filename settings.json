@@ -1,0 +1,8 @@
+{
+    "bot_token": "OTg0Nzc3MTM5NzQ2Mzg1OTMw.GUBXGV.hKVR0bSdPx_Uwc-xK9kc85AyCMOS2nFrPx7J9Y",
+    "prefix": ".",
+    "message_to_spam": "@everyone Get Nuked",
+    "amount_of_channels_to_create": "5",
+    "channel_names": "Get Nuked",
+    "amount_of_messages_to_send_in_each_channel": "2"
+}
