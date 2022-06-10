@@ -10,7 +10,6 @@ if anyerror == True:
   input("")
   try:
     import os
-    os.system("pip install requests")
     os.system("pip install discord")
     os.system("pip install colorama")
     print("Problems Should Be Fixed Now, Restart The Program")
