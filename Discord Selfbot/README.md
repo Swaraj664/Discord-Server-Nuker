@@ -12,9 +12,9 @@ Setup:
 8. wait until downloaded
 9. click close
 10. open setup.bat
-11. open settings.json and change the settings to whatever you want and dont forget enter discord bot token
+11. open settings.json and change the settings to whatever you want and dont forget enter discord token
 12. open start.bat
-13. go in a server where you have admin and type .nuke
+13. type the prefix you chose then nuke (standard .nuke) in a server you have admin in
 
 #-----------------
 
