@@ -37,7 +37,12 @@ except:
   input("")
   exit()
 
-
+try:
+    import os
+    from os import system
+    system("title " + "Discord Nuker,   Made By blob#0005,    Github: github.com/blob0005")
+except:
+    pass
 intents = discord.Intents.default()
 intents.members = True
 
