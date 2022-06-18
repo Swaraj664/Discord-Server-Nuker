@@ -29,7 +29,7 @@ try:
   prefix = str(json_data["prefix"])
   amount_of_channels_to_create = int(json_data["amount_of_channels_to_create"])
   channel_names = str(json_data["channel_names"])
-  token = str(json_data["bot_token"])
+  token = str(json_data["account_token"])
   msg = str(json_data["message_to_spam"])
   amount_of_messages_to_send_in_each_channel = int(json_data["amount_of_messages_to_send_in_each_channel"])
 except:
