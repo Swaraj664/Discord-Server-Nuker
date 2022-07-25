@@ -32,7 +32,7 @@ try:
   token = str(json_data["account_token"])
   msg = str(json_data["message_to_spam"])
   amount_of_messages_to_send_in_each_channel = int(json_data["amount_of_messages_to_send_in_each_channel"])
-except:
+except Exception:
   print('Missing "settings.json" File, It Stores All Settings')
   input("")
   exit()
@@ -57,7 +57,7 @@ bot = commands.Bot(intents=intents, command_prefix=prefix, self_bot=True)
 
 @bot.event
 async def on_ready():
-    print(f"{bot.user.name} Is Online")
+    print("Nuker Is Online!")
 
 
 @bot.command()
