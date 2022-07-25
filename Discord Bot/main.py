@@ -82,7 +82,7 @@ async def nuke(ctx):
             try:
                 await channel.send(msg)
                 msga = int(msga) + 1
-                print(colorama.Fore.GREEN + f"[{str(msga)}] Sended Message")
+                print(colorama.Fore.GREEN + f"[{str(msga)}] Sent Message")
             except:
                 print(colorama.Fore.RED + "Error While Sending Message")
     print(f"Done Nuking {ctx.guild.id}/{ctx.guild.name}")
