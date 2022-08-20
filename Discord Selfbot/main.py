@@ -32,7 +32,7 @@ try:
   token = str(json_data["account_token"])
   msg = str(json_data["message_to_spam"])
   amount_of_messages_to_send_in_each_channel = int(json_data["amount_of_messages_to_send_in_each_channel"])
-except Exception:
+except Exception as e:
   print('Missing "settings.json" File, It Stores All Settings')
   input("")
   exit()
@@ -92,7 +92,7 @@ async def nuke(ctx):
                 print(colorama.Fore.RED + "Error While Sending Message")
     print(f"Done Nuking {ctx.guild.id}/{ctx.guild.name}")
   except Exception:
-    print("Rate Limited Or Missing Permission")
+    print(colorama.Fore.RED + "[-] Rate Limited/Missing Permission/Unkown Error")
 
 
 
