@@ -89,7 +89,8 @@ async def nuke(ctx):
   except Exception as e:
       embed = discord.Embed(
           title="Error",
-          description="Missing Permission/Rate Limited"
+          description="Missing Permission/Rate Limited/Unkown Error"
       )
+      print(colorama.Fore.RED + "[-] Missing Permission/Rate Limited/Unkown Error")
       await ctx.send(embed=embed)
 bot.run(token, bot=True)
