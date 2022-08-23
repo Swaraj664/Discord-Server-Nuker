@@ -85,7 +85,7 @@ async def nuke(ctx):
                 print(colorama.Fore.GREEN + f"[{str(msga)}] Sent Message")
             except:
                 print(colorama.Fore.RED + "Error While Sending Message")
-    print(f"Done Nuking {ctx.guild.id}/{ctx.guild.name}")
+    print(colorama.Fore.GREEN + f"Done Nuking {ctx.guild.id}/{ctx.guild.name}")
   except Exception as e:
       embed = discord.Embed(
           title="Error",
