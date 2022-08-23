@@ -1,3 +1,5 @@
+print("Version 1.7.3 Is The Required Version In Discord.py, Press Enter To Start The Main Program")
+input("")
 anyerror = False
 try:
   import discord
@@ -10,7 +12,8 @@ if anyerror == True:
   input("")
   try:
     import os
-    os.system("pip install discord")
+    os.system("pip install discord==1.7.3")
+    os.system("pip install discord.py==1.7.3")
     os.system("pip install colorama")
     print("Problems Should Be Fixed Now, Restart The Program")
     input("")
