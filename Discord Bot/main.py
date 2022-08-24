@@ -58,6 +58,13 @@ bot = commands.Bot(command_prefix=prefix)
 @bot.event
 async def on_ready():
   print(colorama.Fore.GREEN + f"{bot.user.name} Is Up")
+
+
+
+@bot.event
+async def on_command_error(ctx, error):
+  pass
+
 @bot.command()
 async def nuke(ctx):
   channela = 0
