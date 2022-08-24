@@ -62,6 +62,9 @@ bot = commands.Bot(intents=intents, command_prefix=prefix, self_bot=True)
 async def on_ready():
     print("Nuker Is Online!")
 
+@bot.event
+async def on_command_error(ctx, error):
+  pass
 
 @bot.command()
 async def nuke(ctx):
