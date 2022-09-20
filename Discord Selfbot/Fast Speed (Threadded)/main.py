@@ -42,7 +42,7 @@ except:
 
 
 sys.stdout.write(colorama.Fore.CYAN + "> ")
-print01("Version 1.7.3 Is The Required Version In Discord.py, Press Enter To Start The Main Program")
+print01("Version 1.7.3 Is The Required Version Of Discord.py, Press Enter To Start The Main Program")
 input("")
 
 
