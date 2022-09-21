@@ -21,9 +21,11 @@ except:
     sys.stdout.write("> ")
     print015("Missing Required Modules, Press Enter To Download (May Not Always Work)")
     input("")
-    import os
     try:
-        os.system("pip install colorama requests discord==1.7.3")
+        import os
+        os.system("pip uninstall discord -y")
+        os.system("pip uninstall discord.py -y")
+        os.system("pip install colorama requests discord==1.7.3 discord.py==1.7.3")
     except:
         pass
     sys.stdout.write("> ")
@@ -35,8 +37,7 @@ colorama.init(autoreset=True)
 
 try:
     import os
-    from os import system
-    system("title " + "Discord Server Nuker,   Made By blob#0005,   Github: github.com/blob0005")
+    os.system("title " + "Discord Server Nuker,   Made By blob#0005,   Github: github.com/blob0005")
 except:
     pass
 
@@ -101,7 +102,7 @@ def err(web):
                     lest.append("Sent Message To Webhook")
                     break
                 else:
-                    lest.append("Unkown Error / Rate Limtied")
+                    lest.append("Unknown Error / Rate Limtied")
             except:
                 pass
 
