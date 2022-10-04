@@ -1,11 +1,9 @@
 Info:
 
-Main Discord Server: https://discord.gg/zujURtdRwP
-
-Backup Discord Server: https://discord.gg/VC8NASNnZj
-
-Developer/Owner: blob#0005
+Discord Server(s) And My Dicord Name Here: https://pastebin.com/raw/t1mEJ1Jx
 
 Github: https://github.com/blob0005
 
 Setup Python: https://pastebin.com/raw/VU9Szmyd
+
+Wanna Buy A Custom Tool? Join The Discord Server And Contact Me
