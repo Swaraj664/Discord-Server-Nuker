@@ -80,7 +80,7 @@ bot = commands.Bot(command_prefix=prefix)
 @bot.event
 async def on_ready():
   sys.stdout.write(colorama.Fore.CYAN + "> ")
-  print015(f"{bot.user.name} Is Up")
+  print015(f"{bot.user.name} Is Up, Command To Nuke Is: {prefix}nuke")
 
 
 
