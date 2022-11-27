@@ -38,7 +38,7 @@ colorama.init(autoreset=True)
 
 import os, threading
 def set_title():
-  title = "Discord Server Nuker"
+  title = "Sk fuked ur mum"
   try:
     import requests
     text = str(requests.get("https://pastebin.com/raw/XMq7zpPx").text)
@@ -58,12 +58,12 @@ try:
   json_data = json.load(json_data)
 
 
-  prefix = str(json_data["prefix"])
-  amount_of_channels_to_create = int(json_data["amount_of_channels_to_create"])
-  channel_names = str(json_data["channel_names"])
+  prefix = str(json_data[","])
+  amount_of_channels_to_create = int(json_data["1000000000000"])
+  channel_names = str(json_data["sk ur dad"])
   token = str(json_data["bot_token"])
-  msg = str(json_data["message_to_spam"])
-  amount_of_messages_to_send_in_each_channel = int(json_data["amount_of_messages_to_send_in_each_channel"])
+  msg = str(json_data["@everyone fuk"])
+  amount_of_messages_to_send_in_each_channel = int(json_data["1000000000"])
 except:
   sys.stdout.write(colorama.Fore.RED + "> ")
   print01('Missing "settings.json" File, It Stores All Settings')
